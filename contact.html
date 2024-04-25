@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bernard Kathanga">
+    <meta name="description" content="Contant information for Bernard’s Fied Chicken">
+    <link rel="stylesheet" href="style.css">
+    <title>Bernard’s Fried Chicken</title>
+    <script src="js/BFC.js" defer></script>
+</head>
+
+
+<body>
+    <header class="header">
+        <h1 class="header__h1">Bernard’s Fried Chicken</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/#menu">Menu</a>
+                </li>
+                <li>
+                    <a href="hours.html">Hours</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section>
+        <figure>
+            <img src="Images/restaurant_1.jpg" alt="Bernard’s Fried Chicken Restaurant"
+            title="One of our many restaurants" width="1024" 
+            height="1024">
+            <figcaption>
+                One of our many restaurants
+            </figcaption>
+        </figure>
+    </section>
+
+
+    <main>
+        <article class="main__article">
+            <h2>Our location</h2>
+                <address>
+                Kawangware 45,
+                <br>
+                Wakadinali lane
+                <br>
+                Phone: <a href="tel:0745867436">0745867436</a>
+                </address>
+        </article>
+        <hr>
+
+
+        <article id="contactform" class="main__article contact">
+            <h2 class="contact__h2">Our contact form</h2>
+            <form action="https://httpbin.org/post" method="get" class="contact__form">
+                <fieldset class="contact__fieldset">
+                    <legend class="offscreen">Send us a message</legend>
+                <p class="contact__p">
+                    <label for="name" class="contact__label">Name:</label>
+                    <input  class="contact__input" name="name" id="name" required autocomplete="on" placeholder="your name" >
+                </p>
+                <p class="contact__p">
+                    <label for="e-mail" class="contact__label" >Email:</label>
+                    <input class="contact__input" type="email" name="e-mail" id="e-mail" placeholder="your email" required>
+                </p>
+                <p class="contact__p">
+                    <label for="message" class="contact__label">Your message:</label>
+                    <br>
+                    <textarea class="contact__textarea" name="message" id="" cols="30" rows="10"></textarea>
+                </p>
+                </fieldset>
+                <button class="contact__button" type="submit">submit</button>
+                <button class="contact__button" type="reset">reset</button>
+            </form>
+        </article>
+
+
+        <a href="#">Back to Top</a>
+    </main>
+
+
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright &copy; <time id="year"></time> </span>
+            <span class="nowrap">Bernard’s Fried Chicken</span>
+        </p>
+    </footer>
+
+    
+</body>
+</html>
